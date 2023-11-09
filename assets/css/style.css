@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #143e5a;
+    --primary-color-dark: #091f2e;
+    --secondary-color: #ffffff;
+    --other-color: #000000;
+    --other-color-two: #530404;
+    --result-color: #14a547;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    font-size: 2rem;
+    width: 100%;
+    text-align: right;
+}
+
+.btn {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    border: none;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.btn-eq,
+.btn-del,
+.btn-clear {
+    background: var(--other-color);
+}
+
+.btn:hover {
+    background: var(--primary-color-dark);
+}
+
+.btn-eq:hover,
+.btn-del:hover,
+.btn-clear:hover {
+    background: var(--other-color);
+    color: var(--result-color);
+}
